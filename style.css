@@ -15,12 +15,12 @@ body {
 
     /* Couleurs principales */
 
-    --primary-color: #0bf5f5;
-    --primary-hover: #1dd845;
+    --primary-color: #2563EB;
+    --primary-hover: #1D4ED8;
 
     --secondary-color: #0F172A;
 
-    --accent-color: #4538f8;
+    --accent-color: #0D9488;
 
 
     /* Mode clair */
@@ -126,9 +126,9 @@ body {
 body.dark {
 
 
-    --background-color: #020617;
+    --background-color: #0B1220;
 
-    --surface-color: #0F172A;
+    --surface-color: #111C34;
 
     --text-color: #CBD5E1;
 
@@ -1098,7 +1098,7 @@ height:48px;
     border-radius:50%;
 
     background:radial-gradient(circle,
-            rgba(29, 238, 238, 0.849),
+            rgba(37, 99, 235, 0.35),
             transparent 70%);
 
     animation:floatGlow 5s ease-in-out infinite;

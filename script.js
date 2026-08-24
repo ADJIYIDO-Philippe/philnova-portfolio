@@ -162,24 +162,8 @@ document.body;
 
 
 
-const savedTheme = localStorage.getItem("theme");
-
-
-// Mode clair par défaut
-if(savedTheme === "dark"){
-
-    body.classList.add("dark");
-
-}else{
-
-    body.classList.remove("dark");
-
-    localStorage.setItem(
-        "theme",
-        "light"
-    );
-
-}
+// Toujours en mode clair au chargement, quel que soit le choix précédent
+body.classList.remove("dark");
 
 
 
@@ -1206,48 +1190,6 @@ elements.forEach(element=>{
 });
 
 
-
-});
-
-const form = document.querySelector(".contact-form");
-const status = document.getElementById("form-status");
-
-form.addEventListener("submit", async function(e){
-
-    e.preventDefault();
-
-    const data = new FormData(form);
-
-    try{
-
-        const response = await fetch(form.action,{
-            method:"POST",
-            body:data,
-            headers:{
-                "Accept":"application/json"
-            }
-        });
-
-        if(response.ok){
-
-            status.innerHTML="✅ Merci ! Votre message a été envoyé avec succès.";
-            status.className="success";
-
-            form.reset();
-
-        }else{
-
-            status.innerHTML="❌ Une erreur est survenue. Réessayez.";
-            status.className="error";
-
-        }
-
-    }catch(error){
-
-        status.innerHTML="❌ Impossible d'envoyer le message.";
-        status.className="error";
-
-    }
 
 });
 

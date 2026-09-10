@@ -80,7 +80,6 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
 
 
 
-```html
 <!-- ================= HEADER ================= -->
 
 <header class="header">
@@ -129,33 +128,32 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
 
         <div class="nav-actions">
 
-            <!-- ================= LANGUAGE ================= -->
-
-            <button 
-                id="language-toggle" 
+            <!-- Traduction FR / EN -->
+            <button
+                id="language-toggle"
                 class="language-toggle"
-                aria-label="Changer de langue"
-                title="Changer de langue"
+                type="button"
+                aria-label="Traduire en anglais"
+                title="Traduire en anglais"
             >
-                FR
+                EN
             </button>
 
-            <!-- ================= DARK MODE ================= -->
-
-            <button 
+            <!-- Mode sombre -->
+            <button
                 id="theme-toggle"
+                type="button"
                 aria-label="Activer le mode sombre"
                 title="Mode sombre"
             >
                 <i class="fa-solid fa-moon"></i>
             </button>
 
-            <!-- ================= MOBILE MENU ================= -->
-
-            <button 
+            <!-- Menu mobile -->
+            <button
                 class="menu-toggle"
+                type="button"
                 aria-label="Ouvrir le menu"
-                title="Menu"
             >
                 <i class="fa-solid fa-bars"></i>
             </button>
@@ -166,9 +164,10 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
 
 </header>
 
-<!-- ================= MAIN ================= -->
+<!-- Google Translate caché -->
+<div id="google_translate_element"></div>
 
-<main>ok
+<main>
 
 
 
@@ -3198,6 +3197,14 @@ Maintenance
 <script src="script.js"></script>
 
 
+    </main>
+
+
+<script src="ton-fichier.js"></script>
+
+<script
+    src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+</script>
 
 </body>
 </html>

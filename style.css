@@ -601,6 +601,62 @@ body.dark .header {
 
 
 
+/* =========================================
+   BOUTON DE LANGUE FR / EN
+========================================= */
+
+.language-toggle {
+
+    min-width: 42px;
+
+    height: 42px;
+
+    padding: 0 10px;
+
+    border-radius: 50%;
+
+    background:
+    var(--surface-color);
+
+    box-shadow:
+    var(--shadow-small);
+
+    color:
+    var(--heading-color);
+
+    font-size: 0.8rem;
+
+    font-weight: 700;
+
+    letter-spacing: 0.3px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    transition:
+    var(--transition-fast);
+
+}
+
+
+.language-toggle:hover {
+
+    color:
+    var(--primary-color);
+
+    transform:
+    translateY(-2px);
+
+    box-shadow:
+    var(--shadow-medium);
+
+}
+
+
+
 #theme-toggle {
 
     width: 42px;
@@ -617,6 +673,29 @@ body.dark .header {
 
     color:
     var(--heading-color);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    transition:
+    var(--transition-fast);
+
+}
+
+
+#theme-toggle:hover {
+
+    color:
+    var(--primary-color);
+
+    transform:
+    translateY(-2px);
+
+    box-shadow:
+    var(--shadow-medium);
 
 }
 

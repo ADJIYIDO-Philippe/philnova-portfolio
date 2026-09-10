@@ -1251,3 +1251,86 @@ if (contactForm) {
     });
 
 }
+
+
+/* =========================================
+   GOOGLE TRANSLATE
+   Portfolio PhilNova
+========================================= */
+
+let googleTranslateReady = false;
+
+
+/* Fonction appelée par Google Translate */
+
+function googleTranslateElementInit() {
+
+    new google.translate.TranslateElement({
+
+        pageLanguage: "fr",
+
+        includedLanguages: "en",
+
+        autoDisplay: false
+
+    }, "google_translate_element");
+
+
+    googleTranslateReady = true;
+
+}
+
+
+/* Bouton EN */
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const languageButton =
+        document.getElementById("language-toggle");
+
+
+    if (!languageButton) return;
+
+
+    languageButton.addEventListener("click", () => {
+
+        const select =
+            document.querySelector(".goog-te-combo");
+
+
+        if (!select) {
+
+            console.warn(
+                "Google Translate n'est pas encore chargé."
+            );
+
+            return;
+
+        }
+
+
+        /* Passer en anglais */
+
+        select.value = "en";
+
+
+        select.dispatchEvent(
+            new Event("change")
+        );
+
+
+        /* Modifier le bouton */
+
+        languageButton.textContent = "FR";
+
+        languageButton.title =
+            "Revenir au français";
+
+        languageButton.setAttribute(
+            "aria-label",
+            "Revenir au français"
+        );
+
+    });
+
+});

@@ -5300,3 +5300,32 @@ padding:25px;
     margin-right:auto;
     max-width:92%;
 }
+
+
+/* =========================================
+   GOOGLE TRANSLATE
+========================================= */
+
+#google_translate_element {
+    position: absolute;
+    left: -9999px;
+    top: -9999px;
+}
+
+
+/* Éviter que Google Translate modifie
+   l'apparence du header */
+
+.goog-te-banner-frame {
+    display: none !important;
+}
+
+
+body {
+    top: 0 !important;
+}
+
+
+.goog-te-gadget {
+    font-size: 0 !important;
+}
